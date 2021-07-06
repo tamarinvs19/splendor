@@ -35,4 +35,5 @@ class Gold(Resource):
 
 
 class ResourceCollection(Multiset):
+    # TODO: обернуть init и add в проверку на Resource
     pass

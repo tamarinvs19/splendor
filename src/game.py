@@ -25,7 +25,8 @@ class Splendor(object):
         for bank, init_cards in zip(self.growth_cards_banks, init_growth_cards):
             self.growth_cards_rows.append(GrowthCardsRow(bank, init_cards))
 
-        self.players: list[Player]
+        self.players: list[Player] = []
         for resources, growth_cards, noblemen, cards_on_hands in init_players:
             hands: Hands = Hands(cards_on_hands)
             self.players.append(Player(resources, growth_cards, noblemen, hands))
+
