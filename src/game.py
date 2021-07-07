@@ -29,4 +29,3 @@ class Splendor(object):
         for resources, growth_cards, noblemen, cards_on_hands in init_players:
             hands: Hands = Hands(cards_on_hands)
             self.players.append(Player(resources, growth_cards, noblemen, hands))
-
